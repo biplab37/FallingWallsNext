@@ -10,23 +10,23 @@ export const navLinks = [
   // },
   {
     label: "Home",
-    href: "/",
+    href: "./",
   },
   {
     label: "About",
-    href: "/about",
+    href: "./about",
   },
   {
     label: "Information",
-    href: "/information",
+    href: "./information",
   },
   {
     label: "Gallery",
-    href: "/gallery",
+    href: "./gallery",
   },
   {
     label: "Contact",
-    href: "/contact",
+    href: "./contact",
   },
 ];
 
