@@ -1,10 +1,12 @@
-export default function SectionHeader2({ title }: { title: string } ) {
-    return (
-      <>
-        <div className="max-container flex items-center py-4">
-          <div className="w-4 h-4 bg-red-700 rounded-full m-2" />
-          <h2 className="text-3xl text-red-700">{title}</h2>
-        </div>
-      </>
-    );
-};
+export default function SectionHeader({ title }: { title: string }) {
+  return (
+    <>
+      <div className="inline-flex items-center justify-center w-full">
+        <hr className="h-[2px] my-8 bg-gray-200 border-0 w-64 rounded" />
+        <span className="absolute text-xl text-slate-600 -translate-x-1/2 bg-white left-1/2 px-2">
+          {title}
+        </span>
+      </div>
+    </>
+  );
+}

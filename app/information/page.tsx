@@ -1,4 +1,4 @@
-import { Banner, SectionHeader, Tabs } from "../components";
+import { Banner, SectionHeader2, Tabs } from "../components";
 
 export default function Information() {
   const tabList = [
@@ -40,7 +40,7 @@ export default function Information() {
       <Banner imageurl="uwr.jpg" text="Information" />
       <div className="py-4 mx-auto container">
         <div>
-          <SectionHeader title="Selection Criteria" />
+          <SectionHeader2 title="Selection Criteria" />
           <div>
             <ul>
               <li></li>
@@ -49,10 +49,10 @@ export default function Information() {
           </div>
         </div>
         <div>
-          <SectionHeader title="Assesment Criteria" />
+          <SectionHeader2 title="Assesment Criteria" />
         </div>
         <div>
-          <SectionHeader title="Important Dates" />
+          <SectionHeader2 title="Important Dates" />
 
           <div className="max-container overflow-x-auto sm:rounded-lg pb-20">
             <table className="text-sm text-left rtl:text-right text-gray-500 ">
@@ -99,7 +99,7 @@ export default function Information() {
           </div>
         </div>
         <div>
-          <SectionHeader title="Previous Editions" />
+          <SectionHeader2 title="Previous Editions" />
           <div>
             <Tabs tabs={tabList} />
           </div>

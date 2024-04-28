@@ -3,7 +3,7 @@ import InfoQ from "./infoQ";
 export default function InfoSection() {
   return (
     <>
-      <div className="pt-10"></div>
+      <div className=" pt-10"></div>
       <InfoQ
         question="What is Falling Walls Lab?"
         answer="Falling Walls Lab is an international forum for the next generation of early-career
