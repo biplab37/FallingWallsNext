@@ -6,6 +6,8 @@ import Poster from "./poster";
 import Card from "./card";
 import SectionHeader from "./sectionHeader";
 import InfoSection from "./infoSection";
+import Winners from "./winners";
+import Tabs from "./tabs";
 
 export {
   Banner,
@@ -16,4 +18,6 @@ export {
   Card,
   SectionHeader,
   InfoSection,
+  Winners,
+  Tabs,
 };
