@@ -39,7 +39,7 @@ export default function Header() {
   return (
     <nav className="sticky top-0 z-50 w-full bg-white shadow-md">
       <div className="flex justify-between items-center max-w-screen-2xl mx-auto px-4">
-        <Link href="/">
+        <Link href="./">
           {/* <Image
             src="./fwl-logo_crop.webp"
             width={60}
@@ -54,7 +54,7 @@ export default function Header() {
         </Link>
         <ul className="flex-1 flex justify-center items-center gap-16 max-xl:gap-8 max-md:hidden">
           {navLinks.map((item) => (
-            <li key={item.label}>
+            <li key={item.label} className="text-lg">
               <Link href={item.href}>{item.label}</Link>
             </li>
           ))}

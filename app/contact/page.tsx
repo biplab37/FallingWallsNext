@@ -35,7 +35,32 @@ export default function Contact() {
           </div>
           <SectionHeader title="How to get here" />
           <div className="max-container flex gap-2 p-4">
-            <div className="basis-1/2"></div>
+            <div className="basis-1/2 text-lg">
+              <div className=" font-medium">Address:</div>
+              <div className="">
+                The Oratorium Marianum, Plac Uniwersytecki 1, 50-137 Wrocław
+              </div>
+              <div className="font-semibold">
+                {" "}
+                Nearest Bus Station: <span>Dworzec Autobusowy</span>
+              </div>
+              <div className="font-semibold">
+                {" "}
+                Nearest Train Station: <span>Wrocław Główny</span>
+              </div>
+              <div className="font-semibold">
+                {" "}
+                Nearest Airport:{" "}
+                <span>Wrocław Nicolaus Copernicus Airport</span>
+              </div>
+              <p>
+                From the nearest bus, train or airport, you can use public
+                transport (bus or tram) to reach the venue. Tickets can be
+                bought at the station as well as inside the vehivle. Use google
+                maps for the best route. You can also take a taxi or use a
+                ride-sharing service like Uber.
+              </p>
+            </div>
             <div className="border shadow-lg rounded-lg overflow-hidden basis-1/2 justify-center h-auto">
               <div className="flex aspect-video p-1">
                 <iframe

@@ -28,16 +28,8 @@ const listPartners = [
     logo: "/Logo/logo-dfn.png",
   },
   {
-    name: "WUST",
-    logo: "/Logo/logo-wust.jpg",
-  },
-  {
     name: "SUT",
     logo: "/Logo/logo-sut.png",
-  },
-  {
-    name: "RU",
-    logo: "/Logo/logo-re-un.jpg",
   },
   {
     name: "WUE",
@@ -48,12 +40,20 @@ const listPartners = [
     logo: "/Logo/logo-wr-mu.png",
   },
   {
-    name: "WUELS",
-    logo: "/Logo/logo-wr-env.png",
+    name: "WUST",
+    logo: "/Logo/logo-wust.jpg",
+  },
+  {
+    name: "RU",
+    logo: "/Logo/logo-re-un.jpg",
   },
   {
     name: "UWr",
     logo: "/Logo/logo-uniwroc.jpg",
+  },
+  {
+    name: "WUELS",
+    logo: "/Logo/logo-wr-env.png",
   },
 
   // {

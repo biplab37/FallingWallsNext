@@ -1,9 +1,11 @@
 import Link from "next/link";
+import { Facebook, GitHub, Mail, Phone, Twitter } from "react-feather";
 
 export default function Footer() {
   return (
-    <footer className="bg-white dark:bg-gray-900">
+    <footer className="bg-white">
       <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="md:flex md:justify-between">
           <div className="w-2/3 sm:w-1/2 md:w-1/4">
             {/* <FWLWLogo font="text-4xl" /> */}
@@ -43,11 +45,11 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
-                  {/* <Phone className="inline-block w-4 h-4 -mt-1 me-1" /> */}
+                  <Phone className="inline-block w-4 h-4 -mt-1 me-1" />
                   <span> +48 602 528 824</span>
                 </li>
                 <li>
-                  {/* <Mail className="inline-block w-4 h-4 -mt-1 me-1" /> */}
+                  <Mail className="inline-block w-4 h-4 -mt-1 me-1" />
                   <Link
                     href="mailto:%64%61%76%69%64%2e%62%6c%61%73%63%68%6b%65%40%75%77%72%2e%65%64%75%2e%70%6c"
                     className="hover:underline"
@@ -72,21 +74,21 @@ export default function Footer() {
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
             >
-              {/* <Facebook className="h-6 w-6" /> */}
+              <Facebook className="h-6 w-6" />
               <span className="sr-only">Facebook page</span>
             </Link>
             <Link
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
-              {/* <Twitter className="h-6 w-6" /> */}
+              <Twitter className="h-6 w-6" />
               <span className="sr-only">Twitter page</span>
             </Link>
             <Link
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
             >
-              {/* <GitHub className="h-6 w-6" /> */}
+              <GitHub className="h-6 w-6" />
               <span className="sr-only">GitHub account</span>
             </Link>
           </div>
