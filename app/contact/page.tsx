@@ -1,4 +1,5 @@
 import { Banner, SectionHeader } from "../components";
+import Link from "next/link";
 
 export default function Contact() {
   return (
@@ -18,7 +19,12 @@ export default function Contact() {
               <span className="font-medium uppercase tracking-wide">
                 Email:{" "}
               </span>
-              david.blaschke@uwr.edu.pl
+              <Link
+                href="mailto:david.blaschke@uwr.edu.pl"
+                className="hover:underline"
+              >
+                david.blaschke@uwr.edu.pl
+              </Link>
             </div>
             <div>
               <span className="font-medium uppercase tracking-wide">

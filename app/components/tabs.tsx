@@ -11,7 +11,7 @@ interface TabProps {
 
 interface tab {
   title: string;
-  winners: string[];
+  winners: { name: string; photo: string }[];
   poster: {
     url: string;
     desc: string;

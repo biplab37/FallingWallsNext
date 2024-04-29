@@ -4,7 +4,10 @@ export default function Information() {
   const tabList = [
     {
       title: "2023",
-      winners: ["Anna Siekierna", "Joanna Sadowska", "El Sayed Ali"],
+      winners: [
+        { name: "Anna Siekierna", photo: "" },
+        { name: "Joanna Sadowska", photo: "" },
+      ],
       poster: {
         url: "/Poster/poster-2023.png",
         desc: "Winners of FWL 2023",
@@ -12,7 +15,12 @@ export default function Information() {
     },
     {
       title: "2022",
-      winners: ["Dr. Enrico Patrano", "Veronicka Cervenkova", "Erik Sonntag"],
+      winners: [
+        {
+          name: "Dr. Enrico Patrano",
+          photo: "./Winners/lab22_wroclaw_winner.jpg",
+        },
+      ],
       poster: {
         url: "/Poster/poster-2022.png",
         desc: "Winners of FWL 2022",
@@ -20,7 +28,9 @@ export default function Information() {
     },
     {
       title: "2021",
-      winners: ["Andrzej Zak"],
+      winners: [
+        { name: "Andrzej Zak", photo: "./Winners/lab21_wroclaw_winner.jpeg" },
+      ],
       poster: {
         url: "/Poster/poster-2021.png",
         desc: "Winners of FWL 2022",

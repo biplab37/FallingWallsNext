@@ -44,7 +44,7 @@ export default function Footer() {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   {/* <Phone className="inline-block w-4 h-4 -mt-1 me-1" /> */}
-                  <span> +48 123 456 789</span>
+                  <span> +48 602 528 824</span>
                 </li>
                 <li>
                   {/* <Mail className="inline-block w-4 h-4 -mt-1 me-1" /> */}
