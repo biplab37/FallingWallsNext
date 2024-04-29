@@ -14,46 +14,46 @@ const Sponsor = ({ name, logo }: SponsorProps) => {
 const listSponsors = [
   {
     name: "Embassy",
-    logo: "/Logo/logo-embassy.png",
+    logo: "./Logo/logo-embassy.png",
   },
 ];
 
 const listPartners = [
   {
     name: "WCA",
-    logo: "/Logo/logo-wca.png",
+    logo: "./Logo/logo-wca.png",
   },
   {
     name: "DFN",
-    logo: "/Logo/logo-dfn.png",
+    logo: "./Logo/logo-dfn.png",
   },
   {
     name: "SUT",
-    logo: "/Logo/logo-sut.png",
+    logo: "./Logo/logo-sut.png",
   },
   {
     name: "WUE",
-    logo: "/Logo/logo-wr-econ.png",
+    logo: "./Logo/logo-wr-econ.png",
   },
   {
     name: "WMU",
-    logo: "/Logo/logo-wr-mu.png",
+    logo: "./Logo/logo-wr-mu.png",
   },
   {
     name: "WUST",
-    logo: "/Logo/logo-wust.jpg",
+    logo: "./Logo/logo-wust.jpg",
   },
   {
     name: "RU",
-    logo: "/Logo/logo-re-un.jpg",
+    logo: "./Logo/logo-re-un.jpg",
   },
   {
     name: "UWr",
-    logo: "/Logo/logo-uniwroc.jpg",
+    logo: "./Logo/logo-uniwroc.jpg",
   },
   {
     name: "WUELS",
-    logo: "/Logo/logo-wr-env.png",
+    logo: "./Logo/logo-wr-env.png",
   },
 
   // {
