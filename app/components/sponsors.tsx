@@ -69,7 +69,7 @@ export default function SponsorSection() {
       <ul className="flex content-center justify-center my-2">
         <li>
           <img
-            src="/Logo/logo-embassy.png"
+            src="./Logo/logo-embassy.png"
             alt="German Embassy"
             className="h-[12rem]"
           />
