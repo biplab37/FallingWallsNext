@@ -10,7 +10,7 @@ export default function Information() {
         { name: "Joanna Sadowska", photo: "" },
       ],
       poster: {
-        url: "/Poster/poster-2023.png",
+        url: "./Poster/poster-2023.png",
         desc: "Winners of FWL 2023",
       },
     },
@@ -23,7 +23,7 @@ export default function Information() {
         },
       ],
       poster: {
-        url: "/Poster/poster-2022.png",
+        url: "./Poster/poster-2022.png",
         desc: "Winners of FWL 2022",
       },
     },
@@ -33,7 +33,7 @@ export default function Information() {
         { name: "Andrzej Zak", photo: "./Winners/lab21_wroclaw_winner.jpeg" },
       ],
       poster: {
-        url: "/Poster/poster-2021.png",
+        url: "./Poster/poster-2021.png",
         desc: "Winners of FWL 2022",
       },
     },
@@ -41,7 +41,7 @@ export default function Information() {
       title: "2020",
       winners: [],
       poster: {
-        url: "/Poster/poster-2020.png",
+        url: "./Poster/poster-2020.png",
         desc: "Winners of FWL 2022",
       },
     },
