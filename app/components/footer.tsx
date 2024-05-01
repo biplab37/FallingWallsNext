@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="md:flex md:justify-between">
-          <div className="w-2/3 sm:w-1/2 md:w-1/4">
+          <div className="pb-6 sm:pb-0 w-2/3 sm:w-1/2 md:w-1/4">
             {/* <FWLWLogo font="text-4xl" /> */}
             {/* <Image
               src="./fwl-logo.webp"
@@ -18,7 +18,7 @@ export default function Footer() {
             /> */}
             <img src="./fwl-logo.webp" alt="Falling Walls Lab Wrocław" />
           </div>
-          <div className="grid grid-cols-2 gap-12 sm:gap-24 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-12 sm:gap-24 sm:grid-cols-2">
             <div>
               <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
                 Resources

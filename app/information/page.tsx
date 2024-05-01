@@ -56,8 +56,8 @@ export default function Information() {
   return (
     <>
       <Banner imageurl="uwr.jpg" text="Information" />
-      <div className="py-4 mx-auto container">
-        <div className="flex justify-between">
+      <div className="py-4 mx-auto max-container">
+        <div className="flex flex-col md:flex-row justify-between">
           <div>
             <div>
               <SectionHeader2 title="Eligibility Criteria" />

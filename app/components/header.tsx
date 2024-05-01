@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Menu, X } from "react-feather";
+import { motion } from "framer-motion";
 
 export const navLinks = [
   // {
@@ -74,16 +76,16 @@ export default function Header() {
           Apply Now
         </button>
         {/* Mobile Navigation Icon */}
-        <div onClick={handleToggle} className="block md:hidden">
-          {/* {isOpen ? <X size={25} /> : <Menu size={25} />} */}
+        <div onClick={handleToggle} className="block md:hidden z-10">
+          {isOpen ? <X size={25} /> : <Menu size={25} />}
         </div>
 
         {/* Mobile Navigation Menu */}
-        <ul
+        <motion.ul
           className={
             isOpen
-              ? "fixed md:hidden w-[60%] top-20 right-0 bg-white shadow-xl ease-in-out duration-500"
-              : "hidden ease-in-out w-[60%] duration-500 fixed top-24 -right-[100%]"
+              ? "fixed md:hidden w-[60%] top-0 right-0 bg-white shadow-xl ease-in-out duration-500"
+              : "hidden ease-in-out w-[60%] duration-700 fixed -right-[100%]"
           }
         >
           {/* Mobile Navigation Items */}
@@ -98,7 +100,7 @@ export default function Header() {
               </Link>
             </li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </nav>
   );

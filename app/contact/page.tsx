@@ -34,8 +34,8 @@ export default function Contact() {
             </div>
           </div>
           <SectionHeader title="How to get here" />
-          <div className="max-container flex gap-2 p-4">
-            <div className="basis-1/2 text-lg">
+          <div className="max-container grid grid-cols-1 sm:grid-cols-2 gap-2 p-4">
+            <div className=" col-span-1 text-lg">
               <div className=" font-medium">Address:</div>
               <div className="">
                 The Oratorium Marianum, Plac Uniwersytecki 1, 50-137 Wrocław
@@ -61,7 +61,7 @@ export default function Contact() {
                 ride-sharing service like Uber.
               </p>
             </div>
-            <div className="border shadow-lg rounded-lg overflow-hidden basis-1/2 justify-center h-auto">
+            <div className="col-span-1 border shadow-lg rounded-lg overflow-hidden justify-center">
               <div className="flex aspect-video p-1">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2504.7031595628746!2d17.031110512604272!3d51.1139367392525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470fe9df06afffff%3A0x89c8b96d04306850!2sThe%20Oratorium%20Marianum!5e0!3m2!1sen!2spl!4v1713812799395!5m2!1sen!2spl"

@@ -6,13 +6,17 @@ interface winner {
 export default function Winners({ winnerList }: { winnerList: winner[] }) {
   return (
     <>
-      <div className=" flex flex-col items-center justify-center py-10">
+      <div className=" flex flex-col items-center justify-center md:py-10">
         <h2 className="uppercase text-3xl p-4 font-bold text-slate-500">
-          Winner
+          {winnerList.length == 0
+            ? null
+            : winnerList.length == 1
+            ? "Winner"
+            : "Winners"}
         </h2>
         {winnerList.map((winn) => (
-          <>
-            <div className="w-1/2">
+          <div key={winn.name} className="">
+            <div className="mx-auto w-1/2  ">
               <img
                 src={winn.photo}
                 alt="Winners photo"
@@ -23,7 +27,7 @@ export default function Winners({ winnerList }: { winnerList: winner[] }) {
             <div className="text-center text-xl p-2 font-semibold tracking-wide">
               {winn.name}
             </div>
-          </>
+          </div>
         ))}
       </div>
     </>

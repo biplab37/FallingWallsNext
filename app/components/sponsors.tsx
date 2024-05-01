@@ -83,7 +83,6 @@ export default function SponsorSection() {
           </li>
         ))}
       </ul>
-      <SectionHeader title="" />
     </section>
   );
 }
