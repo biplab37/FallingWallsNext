@@ -3,13 +3,9 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "react-feather";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion, stagger } from "framer-motion";
 
-export const navLinks = [
-  // {
-  //     label: "Home",
-  //     href: "/",
-  // },
+const navLinks = [
   {
     label: "Home",
     href: "./",
@@ -31,6 +27,43 @@ export const navLinks = [
     href: "./contact",
   },
 ];
+
+const menuVariants = {
+  open: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      staggerChildren: 0.07,
+      delayChildren: 0.2,
+      type: "tween",
+    },
+  },
+  closed: {
+    opacity: 0,
+    x: "100%",
+    transition: {
+      staggerChildren: 0.05,
+      staggerDirection: -1,
+    },
+  },
+};
+
+const menuItemVariants = {
+  open: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.2,
+      type: "spring",
+      stiffness: 120,
+      damping: 16,
+    },
+  },
+  closed: {
+    opacity: 0,
+    x: "100%",
+  },
+};
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -79,18 +112,39 @@ export default function Header() {
         <div onClick={handleToggle} className="block md:hidden z-10">
           {isOpen ? <X size={25} /> : <Menu size={25} />}
         </div>
-
+      </div>
+      <AnimatePresence>
         {/* Mobile Navigation Menu */}
+
         <motion.ul
+          // className={
+          //   isOpen
+          //     ? "fixed md:hidden w-[60%] top-0 right-0 bg-white shadow-xl ease-in-out duration-500"
+          //     : "hidden ease-in-out w-[60%] duration-700 fixed -right-[100%]"
+          // }
+          // initial={{ opacity: 0.6, x: "100%" }}
           className={
             isOpen
-              ? "fixed md:hidden w-[60%] top-0 right-0 bg-white shadow-xl ease-in-out duration-500"
-              : "hidden ease-in-out w-[60%] duration-700 fixed -right-[100%]"
+              ? "fixed md:hidden w-[60%] top-14 right-0 bg-white shadow-xl rounded-bl-lg py-2"
+              : "hidden"
           }
+          variants={menuVariants}
+          initial={false}
+          animate={isOpen ? "open" : "closed"}
+          // exit="closed"
         >
           {/* Mobile Navigation Items */}
           {navLinks.map((item) => (
-            <li key={item.label} className="p-4 rounded-xl cursor-pointer">
+            <motion.li
+              key={item.label}
+              className="px-8 py-4 rounded-xl cursor-pointer"
+              // initial={{ opacity: 0 }}
+              variants={menuItemVariants}
+              whileHover={{ scale: 1.01 }}
+              whileTap={{ scale: 0.9 }}
+              // animate={isOpen ? "open" : "closed"}
+              // exit="closed"
+            >
               <Link
                 className="font-montserrat leading-normal text-lg text-slate-gray hover:text-red-700 hover:border-b-[2px] hover:border-red-700 transition-colors duration-300 ease-in-out"
                 href={item.href}
@@ -98,10 +152,10 @@ export default function Header() {
               >
                 {item.label}
               </Link>
-            </li>
+            </motion.li>
           ))}
         </motion.ul>
-      </div>
+      </AnimatePresence>
     </nav>
   );
 }

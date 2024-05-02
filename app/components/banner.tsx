@@ -1,12 +1,12 @@
 interface BannerProps {
-    imageurl: string;
-    text: string;
-    }
+  imageurl: string;
+  text: string;
+}
 
 function Banner({ imageurl, text }: BannerProps) {
   return (
     <>
-      <div className="relative overflow-hidden max-h-[35rem]">
+      <div className="relative overflow-hidden max-h-[30rem]">
         <img src={imageurl} alt="UWR" className="brightness-50" />
         <div className="flex absolute inset-0 justify-center items-center text-slate-200 text-5xl uppercase font-bold tracking-wide">
           {text}
@@ -17,4 +17,3 @@ function Banner({ imageurl, text }: BannerProps) {
 }
 
 export default Banner;
-
