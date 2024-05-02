@@ -4,61 +4,61 @@ interface SponsorProps {
   logo: string;
 }
 
-const Sponsor = ({ name, logo }: SponsorProps) => {
+function Sponsor({ name, logo }: SponsorProps) {
   return (
     <div className="p-4">
       <img src={logo} alt={name} className="h-10 md:h-16 lg:h-20" />
     </div>
   );
-};
+}
 const listSponsors = [
   {
     name: "Embassy",
-    logo: "./Logo/logo-embassy.png",
+    logo: "./logo/logo-embassy.png",
   },
 ];
 
 const listPartners = [
   {
     name: "WCA",
-    logo: "./Logo/logo-wca.png",
+    logo: "./logo/logo-wca.png",
   },
   {
     name: "DFN",
-    logo: "./Logo/logo-dfn.png",
+    logo: "./logo/logo-dfn.png",
   },
   {
     name: "SUT",
-    logo: "./Logo/logo-sut.png",
+    logo: "./logo/logo-sut.png",
   },
   {
     name: "WUE",
-    logo: "./Logo/logo-wr-econ.png",
+    logo: "./logo/logo-wr-econ.png",
   },
   {
     name: "WMU",
-    logo: "./Logo/logo-wr-mu.png",
+    logo: "./logo/logo-wr-mu.png",
   },
   {
     name: "WUST",
-    logo: "./Logo/logo-wust.jpg",
+    logo: "./logo/logo-wust.jpg",
   },
   {
     name: "RU",
-    logo: "./Logo/logo-re-un.jpg",
+    logo: "./logo/logo-re-un.jpg",
   },
   {
     name: "UWr",
-    logo: "./Logo/logo-uniwroc.jpg",
+    logo: "./logo/logo-uniwroc.jpg",
   },
   {
     name: "WUELS",
-    logo: "./Logo/logo-wr-env.png",
+    logo: "./logo/logo-wr-env.png",
   },
 
   // {
   //   name: "UE",
-  //   logo: "/Logo/logo-UE_pl.jpg",
+  //   logo: "/logo/logo-UE_pl.jpg",
   // },
 ];
 
@@ -69,7 +69,7 @@ export default function SponsorSection() {
       <ul className="flex content-center justify-center my-2">
         <li>
           <img
-            src="./Logo/logo-embassy.png"
+            src="./logo/logo-embassy.png"
             alt="German Embassy"
             className="h-[12rem]"
           />

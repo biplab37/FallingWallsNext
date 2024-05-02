@@ -35,9 +35,9 @@ export const navLinks = [
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggle = () => {
+  function handleToggle() {
     setIsOpen(!isOpen);
-  };
+  }
   return (
     <nav className="sticky top-0 z-50 w-full bg-white shadow-md">
       <div className="flex justify-between items-center max-w-screen-2xl mx-auto px-4">

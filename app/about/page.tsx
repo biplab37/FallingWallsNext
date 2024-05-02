@@ -3,7 +3,7 @@ import { Banner } from "../components";
 export default function About() {
   return (
     <>
-      <Banner imageurl="./uwr.jpg" text="About Falling Walls Lab" />
+      <Banner imageurl="./uwr.webp" text="About Falling Walls Lab" />
       <div>
         <div className="max-container p-4 mx-auto lg:py-4">
           <p className="p-6 text-slate-700 text-xl">

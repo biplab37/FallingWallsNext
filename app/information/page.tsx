@@ -10,7 +10,7 @@ export default function Information() {
         { name: "Joanna Sadowska", photo: "" },
       ],
       poster: {
-        url: "./Poster/poster-2023.png",
+        url: "./poster/poster-2023.png",
         desc: "Winners of FWL 2023",
       },
     },
@@ -19,21 +19,21 @@ export default function Information() {
       winners: [
         {
           name: "Dr. Enrico Patrano",
-          photo: "./Winners/lab22_wroclaw_winner.jpg",
+          photo: "./winners/lab22_wroclaw_winner.jpg",
         },
       ],
       poster: {
-        url: "./Poster/poster-2022.png",
+        url: "./poster/poster-2022.png",
         desc: "Winners of FWL 2022",
       },
     },
     {
       title: "2021",
       winners: [
-        { name: "Andrzej Zak", photo: "./Winners/lab21_wroclaw_winner.jpeg" },
+        { name: "Andrzej Zak", photo: "./winners/lab21_wroclaw_winner.jpeg" },
       ],
       poster: {
-        url: "./Poster/poster-2021.png",
+        url: "./poster/poster-2021.png",
         desc: "Winners of FWL 2022",
       },
     },
@@ -41,21 +41,21 @@ export default function Information() {
       title: "2020",
       winners: [],
       poster: {
-        url: "./Poster/poster-2020.png",
+        url: "./poster/poster-2020.png",
         desc: "Winners of FWL 2022",
       },
     },
   ];
 
   const listPoster = [
-    "./Poster/lab24_poster_1.webp",
-    "./Poster/lab24_poster_2.webp",
-    "./Poster/lab24_poster_3.webp",
-    "./Poster/lab24_poster_4.webp",
+    "./poster/lab24_poster_1.webp",
+    "./poster/lab24_poster_2.webp",
+    "./poster/lab24_poster_3.webp",
+    "./poster/lab24_poster_4.webp",
   ];
   return (
     <>
-      <Banner imageurl="uwr.jpg" text="Information" />
+      <Banner imageurl="uwr.webp" text="Information" />
       <div className="py-4 mx-auto max-container">
         <div className="flex flex-col md:flex-row justify-between">
           <div>
@@ -63,10 +63,10 @@ export default function Information() {
               <SectionHeader2 title="Eligibility Criteria" />
               <div className="text-lg">
                 <ul>
-                  <li>Applicant must be older than 18.</li>
+                  <li>1. Applicant must be older than 18.</li>
                   <li>
-                    Applicant should not have prior participation in any Falling
-                    Walls Lab event.
+                    2. Applicant should not have prior participation in any
+                    Falling Walls Lab event.
                   </li>
                 </ul>
               </div>

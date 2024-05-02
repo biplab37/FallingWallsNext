@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <main className="">
       <div className=" relative overflow-hidden h-auto lg:h-[50vh]">
-        <img src="./uwr.jpg" alt="UWR" className="md:blur-sm" />
+        <img src="./uwr.webp" alt="UWR" className="md:blur-sm" />
         <div className="max-container md:absolute md:inset-0 flex justify-center flex-col">
           <span className="text-3xl md:text-6xl uppercase text-red-600 font-bold">
             Falling Walls Lab

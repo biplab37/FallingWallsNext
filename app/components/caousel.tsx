@@ -8,18 +8,20 @@ interface CarouselProps {
   autoSlideInterval?: number;
 }
 
-const Carousel: React.FC<CarouselProps> = ({
+function Carousel({
   children: slides,
   autoSlide = true,
   autoSlideInterval = 5000,
-}) => {
+}: CarouselProps) {
   const [curr, setCurr] = useState<number>(0);
 
-  const prev = () =>
+  function prev() {
     setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
+  }
 
-  const next = () =>
+  function next() {
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+  }
 
   useEffect(() => {
     if (!autoSlide) return;
@@ -63,6 +65,6 @@ const Carousel: React.FC<CarouselProps> = ({
       </div>
     </div>
   );
-};
+}
 
 export default Carousel;

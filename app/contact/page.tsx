@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <>
       <div className="flex-grow">
-        <Banner imageurl="./uwr.jpg" text="Contact Us" />
+        <Banner imageurl="./uwr.webp" text="Contact Us" />
         <div>
           <SectionHeader title="Contact Details" />
           <div className="max-container text-lg px-6">
