@@ -89,12 +89,17 @@ export default function Header() {
         </Link>
         <ul className="flex-1 flex justify-center items-center gap-16 max-xl:gap-8 max-md:hidden">
           {navLinks.map((item) => (
-            <li key={item.label} className="text-lg">
+            <motion.li
+              key={item.label}
+              className="text-lg hover:text-red-600 cursor-pointer"
+              whileTap={{ scale: 0.9 }}
+              whileHover={{ scale: 1.05 }}
+            >
               <Link href={item.href}>{item.label}</Link>
-            </li>
+            </motion.li>
           ))}
         </ul>
-        <button
+        <motion.button
           className="text-white font-medium bg-red-600 px-3 py-2 my-2 mx-0 flex justify-end rounded-xl text-lg"
           onClick={() =>
             window.open(
@@ -102,12 +107,11 @@ export default function Header() {
               "_blank"
             )
           }
-          // animate={{
-          //   scale: [1, 1.1, 1],
-          // }}
+          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.05 }}
         >
           Apply Now
-        </button>
+        </motion.button>
         {/* Mobile Navigation Icon */}
         <div onClick={handleToggle} className="block md:hidden z-10">
           {isOpen ? <X size={25} /> : <Menu size={25} />}

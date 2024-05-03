@@ -10,6 +10,17 @@ export const metadata: Metadata = {
   title: "Falling Walls Lab 2024",
   description:
     "The website for Falling walls lab Wrocław 2024. The event will take place on 14th September 2024. The event is organized at University of Wrocław.",
+  icons: {
+    icon: "./favicon.ico",
+  },
+  keywords: [
+    "Falling Walls Lab",
+    "Falling Walls Lab Wrocław",
+    "Falling Walls Lab 2024",
+    "Falling Walls",
+    "Event",
+    "University of Wrocław",
+  ],
 };
 
 export default function RootLayout({
