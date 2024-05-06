@@ -93,7 +93,7 @@ export default function Header() {
               key={item.label}
               className="text-lg hover:text-red-600 cursor-pointer"
               whileTap={{ scale: 0.9 }}
-              whileHover={{ scale: 1.05 }}
+              // whileHover={{ scale: 1.05 }}
             >
               <Link href={item.href}>{item.label}</Link>
             </motion.li>

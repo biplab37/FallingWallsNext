@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-white">
       <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
         <div className="md:flex md:justify-between">
           <div className="pb-6 sm:pb-0 w-2/3 sm:w-1/2 md:w-1/4">
             {/* <FWLWLogo font="text-4xl" /> */}
@@ -20,10 +20,10 @@ export default function Footer() {
           </div>
           <div className="grid grid-cols-1 gap-12 sm:gap-24 sm:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                 Resources
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
                   <Link
                     href="https://falling-walls.com/lab/"
@@ -40,10 +40,10 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase ">
                 Contact Us
               </h2>
-              <ul className="text-gray-500 dark:text-gray-400 font-medium">
+              <ul className="text-gray-500 font-medium">
                 <li className="mb-4">
                   <Phone className="inline-block w-4 h-4 -mt-1 me-1" />
                   <span> +48 602 528 824</span>
@@ -64,30 +64,21 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
+          <span className="text-sm text-gray-500 sm:text-center ">
             © 2024 Biplab Mahato. All Rights Reserved.
           </span>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
-            <Link
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-            >
+            <Link href="#" className="text-gray-500 hover:text-gray-900">
               <Facebook className="h-6 w-6" />
               <span className="sr-only">Facebook page</span>
             </Link>
-            <Link
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-            >
+            <Link href="#" className="text-gray-500 hover:text-gray-900 ms-5">
               <Twitter className="h-6 w-6" />
               <span className="sr-only">Twitter page</span>
             </Link>
-            <Link
-              href="#"
-              className="text-gray-500 hover:text-gray-900 dark:hover:text-white ms-5"
-            >
+            <Link href="#" className="text-gray-500 hover:text-gray-900  ms-5">
               <GitHub className="h-6 w-6" />
               <span className="sr-only">GitHub account</span>
             </Link>
