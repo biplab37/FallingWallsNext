@@ -81,9 +81,11 @@ export default function Header() {
             height={60}
             alt="Falling Walls Lab Wroclaw Logo"
           /> */}
-          <img
+          <Image
             src="./fwl-logo_crop.webp"
             alt="Falling Walls Lab Wroclaw Logo"
+            width={600}
+            height={600}
             className="h-12 w-auto"
           />
         </Link>
