@@ -4,6 +4,8 @@ interface winner {
 }
 
 export default function Winners({ winnerList }: { winnerList: winner[] }) {
+  const number = winnerList.length;
+  console.log(number);
   return (
     <>
       <div className=" flex flex-col items-center justify-center md:py-10">
@@ -14,21 +16,27 @@ export default function Winners({ winnerList }: { winnerList: winner[] }) {
             ? "Winner"
             : "Winners"}
         </h2>
-        {winnerList.map((winn) => (
-          <div key={winn.name} className="">
-            <div className="mx-auto w-1/2  ">
-              <img
-                src={winn.photo}
-                alt="Winners photo"
-                className="w-full h-full rounded-full shadow-lg shadow-red-300 p-1 bg-red-600"
-                loading="lazy"
-              />
+        <div
+          className={`grid ${
+            number <= 2 ? "grid-cols-1" : "grid-cols-1 lg:grid-cols-2"
+          }`}
+        >
+          {winnerList.map((winn) => (
+            <div key={winn.name} className="">
+              <div className="mx-auto w-1/2  ">
+                <img
+                  src={winn.photo}
+                  alt="Winners photo"
+                  className="w-full h-full rounded-full shadow-lg shadow-red-300 p-1 bg-red-600"
+                  loading="lazy"
+                />
+              </div>
+              <div className="text-center text-xl p-2 font-semibold tracking-wide">
+                {winn.name}
+              </div>
             </div>
-            <div className="text-center text-xl p-2 font-semibold tracking-wide">
-              {winn.name}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

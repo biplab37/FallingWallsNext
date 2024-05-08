@@ -45,6 +45,31 @@ export default function Information() {
         desc: "Winners of FWL 2022",
       },
     },
+    {
+      title: "Older",
+      winners: [
+        {
+          name: "2019: Daniel Kopkane",
+          photo: "./winners/lab19_wroclaw_winner.JPG",
+        },
+        {
+          name: "2018: Taiana Mui",
+          photo: "./winners/lab18_wroclaw_winner.jpg",
+        },
+        {
+          name: "2017: Tatevik Chalyan",
+          photo: "./winners/lab17_wroclaw_winner.JPG",
+        },
+        {
+          name: "2016: Mateusz Szatkowski",
+          photo: "./winners/lab16_wroclaw_winner.JPG",
+        },
+      ],
+      poster: {
+        url: "",
+        desc: "",
+      },
+    },
   ];
 
   const listPoster = [
