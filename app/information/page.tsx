@@ -12,6 +12,7 @@ export default function Information() {
       poster: {
         url: "./poster/poster-2023.png",
         desc: "Winners of FWL 2023",
+        pdf: "./poster/poster-2023.pdf",
       },
     },
     {
@@ -25,6 +26,7 @@ export default function Information() {
       poster: {
         url: "./poster/poster-2022.png",
         desc: "Winners of FWL 2022",
+        pdf: "./poster/poster-2022.pdf",
       },
     },
     {
@@ -34,7 +36,8 @@ export default function Information() {
       ],
       poster: {
         url: "./poster/poster-2021.png",
-        desc: "Winners of FWL 2022",
+        desc: "Winners of FWL 2021",
+        pdf: "./poster/poster-2021.pdf",
       },
     },
     {
@@ -43,6 +46,7 @@ export default function Information() {
       poster: {
         url: "./poster/poster-2020.png",
         desc: "Winners of FWL 2022",
+        pdf: "./poster/poster-2020.pdf",
       },
     },
     {
@@ -68,6 +72,7 @@ export default function Information() {
       poster: {
         url: "",
         desc: "",
+        pdf: "",
       },
     },
   ];

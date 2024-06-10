@@ -75,12 +75,6 @@ export default function Header() {
     <nav className="sticky top-0 z-50 w-full bg-white shadow-md">
       <div className="flex justify-between items-center max-w-screen-2xl mx-auto px-4">
         <Link href="./">
-          {/* <Image
-            src="./fwl-logo_crop.webp"
-            width={60}
-            height={60}
-            alt="Falling Walls Lab Wroclaw Logo"
-          /> */}
           <Image
             src="./fwl-logo_crop.webp"
             alt="Falling Walls Lab Wroclaw Logo"
@@ -95,7 +89,6 @@ export default function Header() {
               key={item.label}
               className="text-lg hover:text-red-600 cursor-pointer"
               whileTap={{ scale: 0.9 }}
-              // whileHover={{ scale: 1.05 }}
             >
               <Link href={item.href}>{item.label}</Link>
             </motion.li>

@@ -7,10 +7,13 @@ import Tab from "./tab";
 interface tab {
   title: string;
   winners: { name: string; photo: string }[];
-  poster: {
-    url: string;
-    desc: string;
-  };
+  poster: PosterProps;
+}
+
+interface PosterProps {
+  url: string;
+  desc: string;
+  pdf: string;
 }
 
 export default function Tabs({ tabs }: { tabs: tab[] }) {
@@ -52,7 +55,7 @@ export default function Tabs({ tabs }: { tabs: tab[] }) {
           ) : null}
           {tabs[activeTab].poster.url.length > 0 ? (
             <div className="flex justify-center w-full md:w-1/2 items-center">
-              <Poster posterurl={tabs[activeTab].poster.url} />
+              <Poster {...tabs[activeTab].poster} />
             </div>
           ) : null}
         </motion.div>
