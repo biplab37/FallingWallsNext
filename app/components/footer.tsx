@@ -24,8 +24,12 @@ const textdata = [
         icon: <Phone className="inline-block w-4 h-4 -mt-1 me-1" />,
       },
       {
-        href: "mailto:%64%61%76%69%64%2e%62%6c%61%73%63%68%6b%65%40%75%77%72%2e%65%64%75%2e%70%6c",
-        label: "david.blaschke@uwr.edu.pl",
+        href: "",
+        label: (
+          <a href="mailto&#58;%64avi&#37;64&#46;b%6Caschke&#64;u&#119;r&#46;e&#100;&#117;&#46;pl">
+            david&#46;bl&#97;sc&#104;ke&#64;u&#119;r&#46;&#101;du&#46;pl
+          </a>
+        ),
         icon: <Mail className="inline-block w-4 h-4 -mt-1 me-1" />,
       },
     ],

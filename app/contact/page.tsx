@@ -20,17 +20,17 @@ export default function Contact() {
                 Email:{" "}
               </span>
               <Link
-                href="mailto:david.blaschke@uwr.edu.pl"
+                href="mailto&#58;%64avi&#37;64&#46;b%6Caschke&#64;u&#119;r&#46;e&#100;&#117;&#46;pl"
                 className="hover:underline"
               >
-                david.blaschke@uwr.edu.pl
+                david&#46;bl&#97;sc&#104;ke&#64;u&#119;r&#46;&#101;du&#46;pl
               </Link>
             </div>
             <div>
               <span className="font-medium uppercase tracking-wide">
                 Phone:
               </span>{" "}
-              +48 123 456 789
+              +48 602 528 824
             </div>
           </div>
           <SectionHeader title="How to get here" />
