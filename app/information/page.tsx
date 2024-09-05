@@ -6,8 +6,10 @@ export default function Information() {
     {
       title: "2023",
       winners: [
-        { name: "Anna Siekierna", photo: "" },
-        { name: "Joanna Sadowska", photo: "" },
+        {
+          name: "Anna Siekierna & Joanna Sadowska",
+          photo: "./winners/lab23_wroclaw_winner.jpg",
+        },
       ],
       poster: {
         url: "./poster/poster-2023.png",
@@ -91,19 +93,42 @@ export default function Information() {
           <div>
             <div>
               <SectionHeader2 title="Eligibility Criteria" />
-              <div className="text-lg">
-                <ul>
-                  <li>1. Applicant must be older than 18.</li>
+              <div className="text-lg ps-6">
+                <p>
+                  Bachelor and Master students, PhD candidates, postdocs, and
+                  early-career professionals from all disciplines are encouraged
+                  to apply.{" "}
+                </p>
+                <p>
+                  Applicants must meet at least one of the following formal
+                  requirements:
+                </p>
+                <ul className="p-4">
                   <li>
-                    2. Applicant should not have prior participation in any
-                    Falling Walls Lab event.
+                    {" "}
+                    o They must be currently enrolled in a university and/or are
+                    currently a postdoc;
+                  </li>
+                  <li>
+                    {" "}
+                    o They must have received a Bachelor’s degree no more than
+                    10 years ago;
+                  </li>
+                  <li>
+                    {" "}
+                    o They must have received a Master’s degree no more than 7
+                    years ago;
+                  </li>
+                  <li>
+                    {" "}
+                    o They must have received a PhD no more than 5 years ago.{" "}
                   </li>
                 </ul>
               </div>
             </div>
             <div>
               <SectionHeader2 title="Prizes" />
-              <div className="text-lg">
+              <div className="text-lg ps-6">
                 <ul>
                   <li>
                     Winner will get to participate in the Falling Walls Lab

@@ -99,7 +99,7 @@ export default function Header() {
           onClick={() =>
             window.open(
               "https://falling-walls.com/lab/apply/wroclaw/",
-              "_blank"
+              "_blank",
             )
           }
           whileTap={{ scale: 0.9 }}
