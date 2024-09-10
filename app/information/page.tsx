@@ -91,14 +91,14 @@ export default function Information() {
       <div className="py-4 mx-auto max-container">
         <div className="flex flex-col md:flex-row justify-between">
           <div>
-            <div>
+            <div className="pb-6">
               <SectionHeader2 title="Eligibility Criteria" />
               <div className="text-lg ps-6">
                 <p>
                   Bachelor and Master students, PhD candidates, postdocs, and
-                  early-career professionals from all disciplines are encouraged
-                  to apply.{" "}
+                  early-career professionals
                 </p>
+                <p>from all disciplines are encouraged to apply.</p>
                 <p>
                   Applicants must meet at least one of the following formal
                   requirements:
@@ -126,13 +126,13 @@ export default function Information() {
                 </ul>
               </div>
             </div>
-            <div>
+            <div className="pb-10">
               <SectionHeader2 title="Prizes" />
               <div className="text-lg ps-6">
                 <ul>
                   <li>
                     Winner will get to participate in the Falling Walls Lab
-                    finale in Berlin (7th November 2024)
+                    finale in Berlin
                   </li>
                   <li>Winner gets a ticket to Falling Walls Science Summit.</li>
                   <li></li>
@@ -142,7 +142,7 @@ export default function Information() {
             <div>
               <SectionHeader2 title="Important Dates" />
 
-              <div className="max-container overflow-x-auto sm:rounded-lg pb-20">
+              <div className="max-container overflow-x-auto sm:rounded-lg pb-10">
                 <table className="text-sm text-left rtl:text-right text-gray-500 ">
                   <thead className="text-md text-gray-600 uppercase bg-gray-200 text-center">
                     <tr>
@@ -186,8 +186,33 @@ export default function Information() {
                 </table>
               </div>
             </div>
+            <div className="pb-8">
+              <SectionHeader2 title="Download Section" />
+              <div className="text-lg ps-10">
+                <ul className="list-disc">
+                  <li>
+                    <a
+                      href="./downloads/lab24-wroclaw-press-release_final.pdf"
+                      download
+                      className="text-blue-500 hover:underline"
+                    >
+                      Download the Press Release
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./downloads/timetable.png"
+                      download
+                      className="text-blue-500 hover:underline"
+                    >
+                      Download the Time Table
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <div className="flex justify-end lg:w-2/5 rounded-md shadow-lg">
+          <div className="flex justify-end items-center lg:w-2/5  h-auto">
             <Carousel autoSlideInterval={6000}>
               {[
                 ...listPoster.map((s: string) => (

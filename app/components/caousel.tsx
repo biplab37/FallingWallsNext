@@ -30,7 +30,7 @@ function Carousel({
   }, [autoSlide, autoSlideInterval]);
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative shadow-lg shadow-red-300">
       <div
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}

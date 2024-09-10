@@ -87,7 +87,7 @@ export default function Header() {
           {navLinks.map((item) => (
             <motion.li
               key={item.label}
-              className="text-lg hover:text-red-600 cursor-pointer"
+              className="lg:text-xl hover:text-red-600 cursor-pointer"
               whileTap={{ scale: 0.9 }}
             >
               <Link href={item.href}>{item.label}</Link>
