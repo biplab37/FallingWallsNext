@@ -20,11 +20,11 @@ export default function InfoSection() {
       />
       <InfoQ
         question="What is the application deadline?"
-        answer="The application deadline is 14th September 2024."
+        answer="The application deadline is 14th August 2024."
       />
       <InfoQ
         question="When will the event take place?"
-        answer="The event will take place on 15th October 2024."
+        answer="The event will take place on 14th September 2024."
       />
       <InfoQ
         question="How can you apply?"
