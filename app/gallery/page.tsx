@@ -1,5 +1,38 @@
 import { Card, SectionHeader } from "../components";
 
+const listPhotos2024 = [
+  {
+    id: 1,
+    alttext: "Group Photo",
+    url: "./previousPhotos/2024/group_photo.jpg",
+    props: "col-span-6 md:col-span-3",
+  },
+  {
+    id: 2,
+    alttext: "Head of the Jury addressing",
+    url: "./previousPhotos/2024/jury.jpg",
+    props: "col-span-6 md:col-span-3",
+  },
+  {
+    id: 3,
+    alttext: "Participant giving presentation",
+    url: "./previousPhotos/2024/participant1.jpg",
+    props: "col-span-6 md:col-span-2",
+  },
+  {
+    id: 4,
+    alttext: "Discussion session",
+    url: "./previousPhotos/2024/discussion.jpg",
+    props: "col-span-6 md:col-span-2",
+  },
+  {
+    id: 5,
+    alttext: "Participant giving presentation",
+    url: "./previousPhotos/2024/participant2.jpg",
+    props: "col-span-6 md:col-span-2",
+  },
+];
+
 const listPhotos2022 = [
   {
     id: 2,
@@ -116,6 +149,16 @@ export default function Gallery() {
   return (
     <div>
       <div>
+        <SectionHeader title="2024" />
+        <div className="max-container">
+          <div className="grid grid-cols-6 gap-4">
+            {listPhotos2024.map((photo: Photo) => (
+              <div key={photo.id} className={` ${photo.props}`}>
+                <Card imageurl={photo.url} description={photo.alttext} />
+              </div>
+            ))}
+          </div>
+        </div>
         <SectionHeader title="2022" />
         <div className="max-container">
           <div className="grid grid-cols-6 gap-4">

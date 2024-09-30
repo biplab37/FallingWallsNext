@@ -4,6 +4,24 @@ import Carousel from "../components/caousel";
 export default function Information() {
   const tabList = [
     {
+      title: "2024",
+      winners: [
+        {
+          name: "Aneta Karpińska",
+          photo: "./winners/lab24_wroclaw_winner1.jpg",
+        },
+        {
+          name: "Marisol Dias",
+          photo: "./winners/lab24_wroclaw_winner2.jpg",
+        },
+      ],
+      poster: {
+        url: "./poster/lab24_poster_1.webp",
+        desc: "Poster of FWL 2024",
+        pdf: "./poster/lab24_poster_1.webp",
+      },
+    },
+    {
       title: "2023",
       winners: [
         {
@@ -13,7 +31,7 @@ export default function Information() {
       ],
       poster: {
         url: "./poster/poster-2023.png",
-        desc: "Winners of FWL 2023",
+        desc: "Poster of FWL 2023",
         pdf: "./poster/poster-2023.pdf",
       },
     },
@@ -27,7 +45,7 @@ export default function Information() {
       ],
       poster: {
         url: "./poster/poster-2022.png",
-        desc: "Winners of FWL 2022",
+        desc: "Poster of FWL 2022",
         pdf: "./poster/poster-2022.pdf",
       },
     },
@@ -38,7 +56,7 @@ export default function Information() {
       ],
       poster: {
         url: "./poster/poster-2021.png",
-        desc: "Winners of FWL 2021",
+        desc: "Poster of FWL 2021",
         pdf: "./poster/poster-2021.pdf",
       },
     },
@@ -47,7 +65,7 @@ export default function Information() {
       winners: [],
       poster: {
         url: "./poster/poster-2020.png",
-        desc: "Winners of FWL 2022",
+        desc: "Poster of FWL 2022",
         pdf: "./poster/poster-2020.pdf",
       },
     },
