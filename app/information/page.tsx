@@ -180,7 +180,7 @@ export default function Information() {
                       >
                         Application Deadline
                       </th>
-                      <td className="px-6 py-4">13th Aug 2024</td>
+                      <td className="px-6 py-4">13th Aug 2025</td>
                     </tr>
                     <tr className="bg-white border-b hover:bg-gray-50">
                       <th
@@ -189,7 +189,7 @@ export default function Information() {
                       >
                         Falling Walls Lab in Wrocław
                       </th>
-                      <td className="px-6 py-4">14th Sep 2024</td>
+                      <td className="px-6 py-4">13th Sep 2025</td>
                     </tr>
                     <tr className="bg-white border-b hover:bg-gray-50 ">
                       <th
@@ -198,7 +198,7 @@ export default function Information() {
                       >
                         Falling Walls Lab Finale
                       </th>
-                      <td className="px-6 py-4">7th Nov 2024</td>
+                      <td className="px-6 py-4">---</td>
                     </tr>
                   </tbody>
                 </table>
