@@ -229,7 +229,7 @@ export default function Information() {
               </div>
             </div>
           </div>
-          <div className="flex justify-end items-center lg:w-2/5  h-auto">
+          <div className="flex justify-end items-center lg:w-2/5  h-auto ">
             {/* <Carousel autoSlideInterval={6000}>
               {[
                 ...listPoster.map((s: string) => (
@@ -237,7 +237,10 @@ export default function Information() {
                 )),
               ]}
             </Carousel> */}
-            <img src={listPoster[0]} className="h-auto rounded-lg" />
+            <img
+              src={listPoster[0]}
+              className="h-auto rounded-lg overflow-hidden relative shadow-lg shadow-red-300"
+            />
           </div>
         </div>
         <div>
