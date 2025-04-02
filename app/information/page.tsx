@@ -97,12 +97,7 @@ export default function Information() {
     },
   ];
 
-  const listPoster = [
-    "./poster/lab24_poster_1.webp",
-    "./poster/lab24_poster_2.webp",
-    "./poster/lab24_poster_3.webp",
-    "./poster/lab24_poster_4.webp",
-  ];
+  const listPoster = ["./poster/poster-2025.webp"];
   return (
     <>
       <Banner imageurl="uwr.webp" text="Information" />
@@ -121,25 +116,21 @@ export default function Information() {
                   Applicants must meet at least one of the following formal
                   requirements:
                 </p>
-                <ul className="p-4">
+                <ul className="p-4 list-disc">
                   <li>
-                    {" "}
-                    o They must be currently enrolled in a university and/or are
-                    currently a postdoc;
+                    They must be currently enrolled in a university and/or are
+                    currently a postdoc
                   </li>
                   <li>
-                    {" "}
-                    o They must have received a Bachelor’s degree no more than
-                    10 years ago;
+                    They must have received a Bachelor’s degree no more than 10
+                    years ago
                   </li>
                   <li>
-                    {" "}
-                    o They must have received a Master’s degree no more than 7
-                    years ago;
+                    They must have received a Master’s degree no more than 7
+                    years ago
                   </li>
                   <li>
-                    {" "}
-                    o They must have received a PhD no more than 5 years ago.{" "}
+                    They must have received a PhD no more than 5 years ago
                   </li>
                 </ul>
               </div>
@@ -147,13 +138,12 @@ export default function Information() {
             <div className="pb-10">
               <SectionHeader2 title="Prizes" />
               <div className="text-lg ps-6">
-                <ul>
+                <ul className="list-disc">
                   <li>
                     Winner will get to participate in the Falling Walls Lab
                     finale in Berlin
                   </li>
                   <li>Winner gets a ticket to Falling Walls Science Summit.</li>
-                  <li></li>
                 </ul>
               </div>
             </div>
@@ -208,7 +198,7 @@ export default function Information() {
               <SectionHeader2 title="Download Section" />
               <div className="text-lg ps-10">
                 <ul className="list-disc">
-                  <li>
+                  {/* <li>
                     <a
                       href="./downloads/lab24-wroclaw-press-release_final.pdf"
                       download
@@ -225,19 +215,29 @@ export default function Information() {
                     >
                       Download the Time Table
                     </a>
+                  </li> */}
+                  <li>
+                    <a
+                      href="./poster/poster-2025.pdf"
+                      download
+                      className="text-blue-500 hover:underline"
+                    >
+                      Download the Poster
+                    </a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="flex justify-end items-center lg:w-2/5  h-auto">
-            <Carousel autoSlideInterval={6000}>
+            {/* <Carousel autoSlideInterval={6000}>
               {[
                 ...listPoster.map((s: string) => (
                   <img src={s} key={s} className="h-auto rounded-lg" />
                 )),
               ]}
-            </Carousel>
+            </Carousel> */}
+            <img src={listPoster[0]} className="h-auto rounded-lg" />
           </div>
         </div>
         <div>
