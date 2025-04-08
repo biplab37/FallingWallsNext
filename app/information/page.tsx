@@ -7,7 +7,7 @@ export default function Information() {
       title: "2024",
       winners: [
         {
-          name: "Aneta Karpińska",
+          name: "Aneta Magiera (Karpińska)",
           photo: "./winners/lab24_wroclaw_winner1.jpg",
         },
         {
