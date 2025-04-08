@@ -7,7 +7,7 @@ import Header from "./components/header";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Falling Walls Lab 2025",
+  title: "Falling Walls Lab Wrocław",
   description:
     "The website for Falling walls lab Wrocław 2025. The event will take place on 13th September 2025. The event is organized at University of Wrocław.",
   icons: {
