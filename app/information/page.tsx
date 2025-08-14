@@ -170,7 +170,7 @@ export default function Information() {
                       >
                         Application Deadline
                       </th>
-                      <td className="px-6 py-4">13th Aug 2025</td>
+                      <td className="px-6 py-4">23th Aug 2025</td>
                     </tr>
                     <tr className="bg-white border-b hover:bg-gray-50">
                       <th
