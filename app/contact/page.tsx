@@ -56,9 +56,9 @@ export default function Contact() {
               <p>
                 From the nearest bus, train or airport, you can use public
                 transport (bus or tram) to reach the venue. Tickets can be
-                bought at the station as well as inside the vehivle. Use google
+                bought at the station as well as inside the vehicle. Use google
                 maps for the best route. You can also take a taxi or use a
-                ride-sharing service like Uber.
+                ride-sharing service like Uber or Bolt.
               </p>
             </div>
             <div className="col-span-1 border shadow-lg rounded-lg overflow-hidden justify-center">

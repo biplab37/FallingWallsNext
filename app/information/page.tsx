@@ -25,7 +25,7 @@ export default function Information() {
       title: "2023",
       winners: [
         {
-          name: "Anna Siekierna & Joanna Sadowska",
+          name: "Anna Sikierka & Joanna Sadowska",
           photo: "./winners/lab23_wroclaw_winner.jpg",
         },
       ],
@@ -188,7 +188,7 @@ export default function Information() {
                       >
                         Falling Walls Lab Finale
                       </th>
-                      <td className="px-6 py-4">---</td>
+                      <td className="px-6 py-4">6-9th Nov 2025</td>
                     </tr>
                   </tbody>
                 </table>
