@@ -222,7 +222,16 @@ export default function Information() {
                       download
                       className="text-blue-500 hover:underline"
                     >
-                      Download the Poster
+                      Download the Poster 2025
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="./downloads/Lab25_wroclaw_programme_booklet.pdf"
+                      download
+                      className="text-blue-500 hover:underline"
+                    >
+                      Download the Booklet 2025
                     </a>
                   </li>
                 </ul>
