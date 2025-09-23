@@ -1,5 +1,32 @@
 import { Card, SectionHeader } from "../components";
 
+const listPhotos2025 = [
+  {
+    id: 1,
+    alttext: "Group photo",
+    url: "./previousPhotos/2025/lab25_wroclaw_group.jpg",
+    props: "col-span-6 md:col-span-3",
+  },
+  {
+    id: 2,
+    alttext: "Group photo with volunteers",
+    url: "./previousPhotos/2025/lab25_wroclaw_group+volunteers.jpg",
+    props: "col-span-6 md:col-span-3",
+  },
+  {
+    id: 3,
+    alttext: "Winners photo",
+    url: "./previousPhotos/2025/lab25_wroclaw_winners.jpg",
+    props: "col-span-6 md:col-span-3",
+  },
+  {
+    id: 4,
+    alttext: "Winners Photo with the juries",
+    url: "./previousPhotos/2025/lab25_wroclaw_winner+jury.jpg",
+    props: "col-span-6 md:col-span-3",
+  },
+];
+
 const listPhotos2024 = [
   {
     id: 1,
@@ -149,6 +176,16 @@ export default function Gallery() {
   return (
     <div>
       <div>
+        <SectionHeader title="2025" />
+        <div className="max-container">
+          <div className="grid grid-cols-6 gap-4">
+            {listPhotos2025.map((photo: Photo) => (
+              <div key={photo.id} className={` ${photo.props}`}>
+                <Card imageurl={photo.url} description={photo.alttext} />
+              </div>
+            ))}
+          </div>
+        </div>
         <SectionHeader title="2024" />
         <div className="max-container">
           <div className="grid grid-cols-6 gap-4">

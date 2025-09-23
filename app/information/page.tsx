@@ -4,6 +4,24 @@ import Carousel from "../components/caousel";
 export default function Information() {
   const tabList = [
     {
+      title: "2025",
+      winners: [
+        {
+          name: "Dr. Marcelina Jureczko",
+          photo: "./winners/lab25_wroclaw_winner.jpg",
+        },
+        {
+          name: "Ester Maráková",
+          photo: "./winners/lab25_wroclaw_winner2.jpg",
+        },
+      ],
+      poster: {
+        url: "",
+        desc: "Poster of FWL 2025",
+        pdf: "",
+      },
+    },
+    {
       title: "2024",
       winners: [
         {
