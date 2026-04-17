@@ -24,7 +24,7 @@ export default function InfoSection() {
       />
       <InfoQ
         question="When will the event take place?"
-        answer="The event will take place on 13th September 2025."
+        answer="The event will take place on 12th September 2026."
       />
       <InfoQ
         question="How can you apply?"
