@@ -115,7 +115,7 @@ export default function Information() {
     },
   ];
 
-  const listPoster = ["./poster/poster-2025.webp"];
+  const listPoster = ["./poster/poster-2026.webp"];
   return (
     <>
       <Banner imageurl="uwr.webp" text="Information" />
@@ -188,7 +188,7 @@ export default function Information() {
                       >
                         Application Deadline
                       </th>
-                      <td className="px-6 py-4">23th Aug 2025</td>
+                      <td className="px-6 py-4">13th Aug 2026</td>
                     </tr>
                     <tr className="bg-white border-b hover:bg-gray-50">
                       <th
@@ -197,7 +197,7 @@ export default function Information() {
                       >
                         Falling Walls Lab in Wrocław
                       </th>
-                      <td className="px-6 py-4">13th Sep 2025</td>
+                      <td className="px-6 py-4">12th Sep 2026</td>
                     </tr>
                     <tr className="bg-white border-b hover:bg-gray-50 ">
                       <th
@@ -206,7 +206,7 @@ export default function Information() {
                       >
                         Falling Walls Lab Finale
                       </th>
-                      <td className="px-6 py-4">6-9th Nov 2025</td>
+                      <td className="px-6 py-4">6-9th Nov 2026</td>
                     </tr>
                   </tbody>
                 </table>
@@ -236,11 +236,11 @@ export default function Information() {
                   </li> */}
                   <li>
                     <a
-                      href="./poster/poster-2025.pdf"
+                      href="./poster/poster-2026.pdf"
                       download
                       className="text-blue-500 hover:underline"
                     >
-                      Download the Poster 2025
+                      Download the Poster 2026
                     </a>
                   </li>
                   <li>
