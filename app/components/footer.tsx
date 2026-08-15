@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, GitHub, Mail, Phone, Twitter } from "react-feather";
+import { Instagram, GitHub, Mail, Phone, Twitter } from "react-feather";
 import FooterBoxes from "./footer_boxes";
 const textdata = [
   {
@@ -36,17 +36,12 @@ const bottomline = {
   copyright: "© 2024 Biplab Mahato. All Rights Reserved.",
   social: [
     {
-      href: "#",
-      icon: <Facebook className="h-6 w-6" />,
-      text: "Facebook page",
+      href: "https://www.instagram.com/fallingwallslabwroclaw",
+      icon: <Instagram className="h-6 w-6" />,
+      text: "Instagram page",
     },
     {
-      href: "#",
-      icon: <Twitter className="h-6 w-6" />,
-      text: "Twitter page",
-    },
-    {
-      href: "#",
+      href: "https://github.com/biplab37/FallingWallsNext",
       icon: <GitHub className="h-6 w-6" />,
       text: "GitHub account",
     },
