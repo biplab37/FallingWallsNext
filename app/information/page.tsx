@@ -99,8 +99,8 @@ export default function Information() {
           photo: "./winners/lab18_wroclaw_winner.jpg",
         },
         {
-          name: "2017: Tatevik Chalyan",
-          photo: "./winners/lab17_wroclaw_winner.JPG",
+          name: "2017: Tatevik Chalyan (right) & Jakub Jankowski (left)",
+          photo: "./winners/lab17_wroclaw_winner2.png",
         },
         {
           name: "2016: Mateusz Szatkowski",

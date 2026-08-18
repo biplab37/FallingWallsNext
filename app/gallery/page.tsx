@@ -165,6 +165,15 @@ const listPhotos2019 = [
   },
 ];
 
+const listPhotos2017 = [
+  {
+    id: 1,
+    url: "./previousPhotos/2017/lab17_winners_berlin.png",
+    alttext: "Winners and the organizers of Falling Walls Lab Wrocław and Armenia",
+    props: "col-span-12 md:col-span-6 md:col-start-4",
+  },
+];
+
 interface Photo {
   id: number;
   alttext: string;
@@ -208,7 +217,7 @@ export default function Gallery() {
         </div>
         <SectionHeader title="2021" />
         <div className="max-container">
-          <div className="grid grid-cols-12 gap-4">
+          <div className="grid grid-cols-12 gap-4 center">
             {listPhotos2021.map((photo: Photo) => (
               <div key={photo.id} className={` ${photo.props}`}>
                 <Card imageurl={photo.url} description={photo.alttext} />
@@ -221,6 +230,16 @@ export default function Gallery() {
           <div className="grid grid-cols-12 gap-4">
             {listPhotos2019.map((photo: Photo) => (
               <div key={photo.id} className={` ${photo.props}`}>
+                <Card imageurl={photo.url} description={photo.alttext} />
+              </div>
+            ))}
+          </div>
+        </div>
+        <SectionHeader title="2017" />
+        <div className="max-container">
+          <div className="grid grid-cols-12 gap-4">
+            {listPhotos2017.map((photo: Photo) => (
+              <div key={photo.id} className={`${photo.props}`}>
                 <Card imageurl={photo.url} description={photo.alttext} />
               </div>
             ))}
